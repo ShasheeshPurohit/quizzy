@@ -10,4 +10,9 @@
     list-style: none;
 }
 
+.quiz-reset{
+    display: flex;
+    flex-direction: column;
+
+}
 

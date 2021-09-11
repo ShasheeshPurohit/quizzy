@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuiz } from "../../Context/QuizContext";
-import { ToastContainer, toast } from 'react-toastify';
 import "./Home.css"
-
 
 export default function Home(){
 
