@@ -10,7 +10,7 @@
     display: block;
     border: none;
     margin-top: 2rem;
-    background-color: rgb(75, 1, 145, 0.8);
+    background: linear-gradient(rgb(51, 0, 190,0.8), rgb(97, 12, 153,0.5));
     width: max-content;
     color: white;
     padding: 0.5rem 1rem;
@@ -21,7 +21,7 @@
 }
 
 .home-btn:hover{
-    background-color: rgb(75, 1, 145);
+    background: linear-gradient(rgb(51, 0, 190), rgb(97, 12, 153));
 }
 
 .name-field-home{

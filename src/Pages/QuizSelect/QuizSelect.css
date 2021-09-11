@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .quiz-list{
@@ -20,18 +20,21 @@ margin: 1rem;
 width: 15rem;
 height: 15rem;
 border: 1px solid black;
+background: linear-gradient(to right, rgb(51, 0, 190), rgb(97, 12, 153));
 text-transform: uppercase;
 padding: 0 0 0.5rem 0;
 border-radius: 10px;
 cursor: pointer;
+color: white;
 transition: all 0.2s;
 }
 
 .quiz-card:hover{
     transform: scale(1.1);
+
 }
 
-.meme-quiz{
+/* .meme-quiz{
     background-color: rgb(196, 7, 0);
     color: white;
 }
@@ -39,7 +42,7 @@ transition: all 0.2s;
 .food-quiz{
     background-color: rgb(23, 0, 128);
     color: white;
-}
+} */
 
 .quiz-icon{
     height: 80%;

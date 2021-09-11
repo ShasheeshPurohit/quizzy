@@ -1,0 +1,31 @@
+.quiz-reset{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quiz-result-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.quiz-end-btn{
+    border: none;
+    background-color: rgb(75, 1, 145, 0.8);
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.quiz-end-btn:hover{
+    background-color: rgb(75, 1, 145);
+}
+
+.reset{
+    margin-top: 1rem;
+}
+
+.new-quiz{
+    margin-top: 0;
+}
