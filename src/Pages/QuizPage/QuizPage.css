@@ -1,4 +1,29 @@
+.quiz-page-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .answer-options{
     padding: 0;
     list-style: none;
+}
+
+.quiz-reset{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quiz-reset-btn{
+    border: none;
+    background-color: rgb(75, 1, 145, 0.8);
+    color: white;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.quiz-reset-btn:hover{
+    background-color: rgb(75, 1, 145);
 }

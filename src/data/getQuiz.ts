@@ -1,9 +1,10 @@
 import {Quiz} from "./quizTypes"
 
+
 const quizOne: Quiz = {
     
     quizName: "Meme Quiz 2021",
-    quizImg:"https://leverageedu.com/blog/wp-content/uploads/2021/01/Meme-Quiz.png",
+    quizImg:"https://pbs.twimg.com/media/E3sT8WXXoAYBMte.jpg",
     questions: [
         {
             question: "Which famous meme related to cricket was sold as a NFT?",

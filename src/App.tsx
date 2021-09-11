@@ -10,6 +10,11 @@ import QuizSelect from './Pages/QuizSelect/QuizSelect';
 function App() {
   return (
     <div className="App">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div className="container-md">
+    <a className="navbar-brand" href="/ ">Quizzy💡</a>
+  </div>
+</nav>
       <header className="App-header">
         <Routes>
           <Route path="/" element={<Home/>}/>

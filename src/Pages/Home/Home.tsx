@@ -11,8 +11,9 @@ export default function Home(){
 
     return(
         <div className="home-layout">
-            <h1>Quizzy 💡</h1>
-            <p className="welcome-text">Hi there! welcome to Quizzy!<br/>Enter your name below to get started</p>
+            <p className="app-title">Quizzy 💡</p>
+            <p className="welcome-text">Hi there! welcome to Quizzy!</p>
+            <p className="welcome-text">Enter your name below to get started</p>
             <input className="name-field-home" type="text" placeholder="name" onChange={(event)=>setName(event.target.value)}></input>
             <button className="home-btn" onClick={()=>{
                 dispatch({type:"set_user", payload:{user:name}})

@@ -29,6 +29,7 @@ export default function QuizSelect(){
                 <li onClick={()=>setQuiz(quizTwo)} className="quiz-card food-quiz">
                 <img className="quiz-icon" src={quizTwo.quizImg}/>
                     <p className="quiz-title">{quizTwo.quizName}</p></li>
+
             </ul>
         </div>
     );

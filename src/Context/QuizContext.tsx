@@ -7,6 +7,7 @@ export type InitialStateType = {
     questionNo: number,
     quizData: Quiz,
     user?:string
+    status: QuizStatus
 }
 
 export type QuizContextData = {
@@ -14,11 +15,17 @@ export type QuizContextData = {
     dispatch: (action: ACTION) =>void
 }
 
+type QuizStatus = 
+| "idle"
+| "in-progress"
+| "ended"
+
 export type ACTION = 
 |{type:"right", payload:{points:number}}
 |{type:"wrong", payload:{points:number}}
 |{type:"set_Quiz", payload:{quiz:Quiz}}
 |{type:"set_user", payload:{user:string}}
+|{type:"set_status", payload:{status:QuizStatus}}
 |{type:"reset"}
 
 
@@ -26,7 +33,8 @@ export const intialStateReducer:InitialStateType = {
     score: 0,
     questionNo:1,
     quizData:quizOne,
-    user:undefined
+    user:undefined,
+    status: "idle"
 }
 
 export const quizContextDefaultValue:QuizContextData = {
@@ -55,6 +63,8 @@ function reducerFunc(state:InitialStateType, action:ACTION){
             return {...state, score: state.score-action.payload.points, questionNo: state.questionNo+1}
         case "set_user":
             return {...state, user:action.payload.user}    
+        case "set_status":
+            return {...state, status:action.payload.status}
         case "set_Quiz":
              return {...state, quizData: action.payload.quiz, score:0, questionNo:1}
         case "reset":

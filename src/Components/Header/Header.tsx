@@ -1,11 +1,11 @@
 import { HeaderProps } from "./HeaderProps.types";
 import "./Header.css"
+import { useQuiz } from "../../Context/QuizContext";
 
 export function Header({userScore=0}:HeaderProps){
-
+    const {state} = useQuiz();
     return(
         <header>
-            <h1>Quizzy 💡</h1>
             <div className="user-score">
                 <p>score: {userScore}</p>
             </div>
