@@ -37,19 +37,19 @@
     text-transform: uppercase;
 }
 
-.answer-option > button:hover{
-    background-color: purple;
-    color: white;
+
+
+
+@media only screen and (max-width: 600px){
+    .answer-option > button:active{
+        background-color: purple;
+        color: white;
+    }
 }
 
-.quiz-end-btn{
-    border: none;
-    background-color: rgb(75, 1, 145, 0.8);
-    color: white;
-    border-radius: 10px;
-    margin-top: 2rem;
-}
-
-.quiz-end-btn:hover{
-    background-color: rgb(75, 1, 145);
+@media only screen and (min-width: 600px){
+    .answer-option > button:hover{
+        background-color: purple;
+        color: white;
+    }
 }
